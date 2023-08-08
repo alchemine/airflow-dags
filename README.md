@@ -35,4 +35,4 @@ transform >> load >> clean >> finish
     ti.xcom_push(key='DB_PATH',       value="/root/airflow/airflow.db")
     ti.xcom_push(key='TMP_DATA_PATH', value=f"/tmp/data-{HASH}.csv")
     ```
-7. `initialize >> extract >> transform >> load >> clean >> finish` pipeline을 처음 사용해보았는데 꽤 완성도가 있는 것 같다.
+7. `initialize >> extract >> transform >> load >> clean >> finish` pipeline은 꽤 완성도가 있는 것 같다.
