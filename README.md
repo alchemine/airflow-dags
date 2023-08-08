@@ -20,7 +20,7 @@ transform >> load >> clean >> finish
 
 ## - Point
 1. 날짜 별 분기 설정(`BranchDayOfWeekOperator`)
-2. Transform → Load 과정에서 저장되는 임시 데이터 경로명을 위한 hash값을 xcom으로 DAG 내부에서 공유 \n
+2. Transform → Load 과정에서 저장되는 임시 데이터 경로명을 위한 hash값을 xcom으로 DAG 내부에서 공유
    - Q. 데이터를 저장하지 않고 `@task`를 사용해도 되긴하지만, operator를 쓰고 싶다. 같이 쓸 수 있는 fancy method는 없을까?
 3. 데이터 유효성 검사를 통한 분기 설정(`BranchPythonOperator`)
 4. Jinja를 이용한 `execution_date` 사용
